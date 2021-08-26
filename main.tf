@@ -10,12 +10,12 @@ terraform {
 
 provider "azurerm" {
     features {}
-
+  # Configuration options
 }
 
 resource "azurerm_resource_group" "resource_group" {
-  name     = "celen-bupa-migrate-rg"
-  location = "uksouth"
+  name     = var.resource_group
+  location = var.resource_location
 }
 
 resource "azurerm_virtual_network" "vnet" {
