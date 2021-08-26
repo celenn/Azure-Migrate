@@ -1,6 +1,6 @@
 variable "resource_location" {
   description = "Location of resources"
-  type        = list(string)
+  type        = string
   default =  "UK South"
   
 }
